@@ -42,7 +42,7 @@
 
 namespace liboai {
 	namespace netimpl {		
-		static bool _flag = false;
+		[[maybe_unused]] static bool _flag = false;
 		
 		void ErrorCheck(CURLcode* ecodes, size_t size, std::string_view where);
 		void ErrorCheck(CURLcode ecode, std::string_view where);
